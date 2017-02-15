@@ -50,3 +50,8 @@ git commit -m ""
 ```
 git push -u origin master
 ```
+
+
+## 克隆命令
+
+`git clone git@github.com:billoway/git_sz.git`
