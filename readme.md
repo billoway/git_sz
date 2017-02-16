@@ -12,10 +12,16 @@ git commit -m "init"
 
 ## 远程仓库
 登录github等托管平台,新建仓库 -> new repo
+如果首次在系统上使用git,检查用户目录下是否有 .ssh/id_rsa 和 id_rsa.pub 如果没有文件夹或文件 需要生成 密钥文件
+```
+ssh-keygen -t rsa -C "youremail@example.com"
+```
+在托管平台选择用户设置 -> 添加一个 ssh key
+把id_rsa.pub 文件中的内容拷贝进去,保存
 
 ## 本地仓库推送到服务器端
 首次推送到服务器端,需要先把本地仓库与服务器端仓库关联
-`git remote add origin git@github.com:your_user_name/your_repo_name.git`
+```git remote add origin git@github.com:your_user_name/your_repo_name.git```
 
 以后使用只需要推送修改到服务器端
 master 是分支名称, 其中 master 是默认的主分支名称
