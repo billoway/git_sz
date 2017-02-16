@@ -21,6 +21,7 @@ ssh-keygen -t rsa -C "youremail@example.com"
 
 ## 本地仓库推送到服务器端
 首次推送到服务器端,需要先把本地仓库与服务器端仓库关联
+
 ```git remote add origin git@github.com:your_user_name/your_repo_name.git```
 
 以后使用只需要推送修改到服务器端
